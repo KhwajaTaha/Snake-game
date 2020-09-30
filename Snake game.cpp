@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//bool to check gameover
 bool gameover;
 
 const int width = 20;
@@ -12,12 +13,15 @@ const int height = 17;
 
 int x, y, fruitX, fruitY, score;
 
-int tailX[100], tailY[100]; //snake coordinates
+//Coordinates For The Snake
+int tailX[100], tailY[100]; 
 
 int nTail;
 
-enum eDirecton {STOP = 0, LEFT,RIGHT, UP, DOWN}; // Controls
+//Controlling Of Snake
+enum eDirecton {STOP = 0, LEFT,RIGHT, UP, DOWN}; 
 
+//Direction
 eDirecton dir;
 
 void Setup() {
